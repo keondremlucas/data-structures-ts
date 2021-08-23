@@ -22,11 +22,12 @@ export default class Queue {
           return this.items;
     }
    
-    getLast()
+    rear()
     {   let a = this.items.length;
-        return this.items[a -1];
+        return this.items[a - 1];
     }
-    isEmpty() {
+    isEmpty() 
+    {
 
         if(this.items[0] == null)
         {
@@ -39,7 +40,12 @@ export default class Queue {
             
          
     }
-    getFront()
+    length()
+    {
+        return this.items.length;
+    }
+
+    front()
     {   if(this.isEmpty() == false)
         {
             return this.items[0] ;
